@@ -2,7 +2,8 @@ class User < ApplicationRecord
 	has_many :accesses
 	has_many :desks, through: :accesses
 	
-	belongs_to :equipment
+	has_many :incidents
+	has_many :equipment
 	
 	has_many :incident
 	
